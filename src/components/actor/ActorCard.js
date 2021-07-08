@@ -1,3 +1,5 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable arrow-body-style */
 import React from 'react';
 import { StyledActorCard } from './ActorCard.styled';
 
@@ -12,9 +14,8 @@ const ActorCard = ({ image, name, gender, country, birthday, deathday }) => {
       </h1>
       <p>{country ? `Comes from ${country}` : 'No country known'}</p>
       {birthday ? <p>Born {birthday}</p> : null}
-      <p className="deathday">{deathday ? `Died ${deathday}` : 'Alive'}</p>
+      <p className="deathday"> {deathday ? `Died ${deathday}` : 'Alive'}</p>
     </StyledActorCard>
   );
 };
-
 export default ActorCard;

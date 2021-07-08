@@ -1,7 +1,10 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable arrow-body-style */
 import React from 'react';
 import ActorCard from './ActorCard';
+import { FlexGrid } from '../styled';
+
 import IMAGE_NOT_FOUND from '../../images/not-found.png';
-import { FlexGrid } from '../Styled';
 
 const ActorGrid = ({ data }) => {
   return (
